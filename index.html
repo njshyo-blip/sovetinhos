@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorveteria</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="app">
+
+        <section class="customer panel">
+            <div class="customer-art">
+                <img id="customerImage" src="cliente-1.png" alt="Cliente">
+            </div>
+
+            <div class="customer-info">
+                <h2 id="customerName">Cliente 1</h2>
+                <p id="requestText"></p>
+                <div class="request-preview" id="requestPreview"></div>
+            </div>
+        </section>
+
+        <section class="builder panel">
+            <div class="work-area">
+                <div class="icecream-stage">
+                    <div class="scoop-stack" id="scoopStack"></div>
+                    <div class="cone-shape" id="coneShape"></div>
+                </div>
+
+                <div class="controls">
+                    <div class="control-group">
+                        <h3>Casquinhas</h3>
+                        <div class="choices" id="coneChoices">
+                            <button class="choice" data-cone="tradicional">
+                                <span class="cone-icon traditional"></span>
+                                Tradicional
+                            </button>
+                            <button class="choice" data-cone="waffle">
+                                <span class="cone-icon waffle"></span>
+                                Waffle
+                            </button>
+                            <button class="choice" data-cone="chocolate">
+                                <span class="cone-icon chocolate"></span>
+                                Chocolate
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <h3>Sorvetes</h3>
+                        <div class="choices" id="flavorChoices">
+                            <button class="choice" data-flavor="morango">
+                                <i class="flavor-dot strawberry"></i>
+                                Morango
+                            </button>
+                            <button class="choice" data-flavor="chocolate">
+                                <i class="flavor-dot cocoa"></i>
+                                Chocolate
+                            </button>
+                            <button class="choice" data-flavor="baunilha">
+                                <i class="flavor-dot vanilla"></i>
+                                Baunilha
+                            </button>
+                            <button class="choice" data-flavor="pistache">
+                                <i class="flavor-dot pistachio"></i>
+                                Pistache
+                            </button>
+                            <button class="choice" data-flavor="menta">
+                                <i class="flavor-dot mint"></i>
+                                Menta
+                            </button>
+                        </div>
+                    </div>
+
+                    <button class="deliver" id="deliverBtn" disabled>Entregar pedido</button>
+                    <p class="feedback" id="feedback" role="status" aria-live="polite"></p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
